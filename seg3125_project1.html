@@ -40,8 +40,112 @@
 
         }
 
+        /*for the front images slideshow*/
+
         .front_images {
             border-radius: 29px;
+            width: 80%;
+            height: 50%;
+        }
+
+        * {box-sizing:border-box}
+
+        /* Slideshow container */
+
+        .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        box-sizing:border-box;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+            box-sizing:border-box;
+        display: none;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+        box-sizing:border-box;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+        box-sizing:border-box;
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+        box-sizing:border-box;
+        background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Caption text */
+        .text {
+        box-sizing:border-box;
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+        box-sizing:border-box;
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+        box-sizing:border-box;
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+        box-sizing:border-box;
+        background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+        box-sizing:border-box;
+        animation-name: fade;
+        animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+        box-sizing:border-box;
+        from {opacity: .4}
+        to {opacity: 1}
         }
 
     </style>
@@ -95,13 +199,66 @@
         <!--FRONT IMAGE SLIDESHOW-->
         <div class = "slideshow-container">
 
-            <div class = "changingSlides">
-                <img src = "">
-
+            <div class = "mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src = "photos/front_pg.png" alt = "first slideshow pic" style = "width: 100%">
             </div>
 
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="photos/slide_2_better.webp" alt = "second slideshow pic" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="photos/slide_3.jpeg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <!-- next and prev buttons-->
+            <a class = "prev" onclick = "plusSlides(-1)"> &#10094;</a>
+            <a class = "next" onclick = "plusSlides(1)">&#10095;</a>
         </div>
 
+        <!--dots for front images-->
+        <div style = "text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        
+        </div>
+
+        <!--for the slideshow-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+
     </body>
 </html>
