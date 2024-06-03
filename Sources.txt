@@ -1,1 +1,2 @@
-- "How to make responsive navbar with Bootstrap 5 | Step by Step Tutorial", https://www.youtube.com/watch?v=zOtxP7ahi4M, Web Dev Creative, March 11, 2023
+- "How to make responsive navbar with Bootstrap 5 | Step by Step Tutorial", https://www.youtube.com/watch?v=zOtxP7ahi4M, Web Dev Creative, March 11, 2023 (didn't rlly end up using it tbh)
+- https://www.w3schools.com/howto/howto_js_slideshow.asp, front image slideshow help

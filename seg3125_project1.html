@@ -12,30 +12,49 @@
             box-shadow: 0 0 5px 10px #555;
         }
 
-        .padding{
+        .padding_larger{
             padding: 15px;
+        }
+
+        .padding_smaller{
+            padding: 7.5px;
         }
 
         .title {
             font-family: 'Gill Sans';
+            font-size: 60px;
+            background: -webkit-linear-gradient(#eee, #333);            
+
             margin: auto;
             width: 100%;
 
             background: rgb(253, 214, 218); /* background: rgb(253, 214, 218);*/
             text-align: center;
-            font-size: xxx-large;
-            box-shadow: 0 0 5px 10px rgb(253, 214, 218);
+            box-shadow: 0 0 5px 5px rgb(253, 214, 218);
 
         }
+
+        .navbar {
+            background: rgb(255, 255, 255);
+            border-style: none;
+
+        }
+
+        .front_images {
+            border-radius: 29px;
+        }
+
     </style>
 
     <head> 
         <title >Trim Tresses</title>
 
-        <div class = "padding"> </div>
+        <div class = "padding_larger"> </div>
         <h1 class = "title">TRIM TRESSES</h1>
-        <div class = "padding"> </div>
+        <div class = "padding_smaller"> </div>
+        <hr>
 
+        
 
         <!-- Bootstrap CSS -->
         <meta charset="utf-8">
@@ -46,35 +65,39 @@
 
     </head>
 
-    <body class = "vh-100 overflow-hidden">
-        <!-- trying out tutorial-->
-
-
-
-        <!-- trying out tutorial-->
-
-
+    <body >
+        <!--NAV BAR-->
         <div class="container-fluid">
             <div class = "row">
-                <div class="col" class = "center">
+                <button class="col navbar">
                     <h5 class = "center">BOOKING</h5>
-                </div>
+                </button>
 
-                <div class="col" class = "center">
+                <button class="col navbar">
                     <h5 class = "center">SERVICES</h5>
-                </div>
+                </button>
 
-                <div class="col" class = "center">
+                <button class="col navbar">
                     <h5 class = "center">OUR TEAM</h5>
-                </div>
+                </button>
 
-                <div class="col" class = "center">
+                <button class="col navbar">
                     <h5 class = "center">LOCATION & HOURS</h5>
-                </div>
+                </button>
 
-                <div class="col" class = "center">
+                <button class="col navbar">
                     <h5 class = "center">CONTACT</h5>
-                </div>
+                </button>
+            </div>
+
+        </div>
+
+        <!--FRONT IMAGE SLIDESHOW-->
+        <div class = "slideshow-container">
+
+            <div class = "changingSlides">
+                <img src = "">
+
             </div>
 
         </div>
