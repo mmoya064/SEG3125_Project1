@@ -155,7 +155,7 @@
 
         /*--------------------------book a service----------------------------*/
 
-        .bookingButton {
+        .bookingTitle {
             background-image: linear-gradient(rgb(207, 246, 230), rgb(227, 242, 236), rgb(207, 246, 230));
             border-radius: 50px;
             font-size: 60px;
@@ -194,18 +194,29 @@
         }
 
         .bookingButton {
-            background-image: linear-gradient(rgb(207, 246, 230), rgb(227, 242, 236), rgb(207, 246, 230));
+            background-image: linear-gradient(rgb(207, 246, 230), rgb(227, 242, 236), rgb(193, 209, 202));
             border-radius: 50px;
-            font-size: 60px;
+            font-size: 50px;
             font-family: 'Gill Sans';
             border-style: none;
 
             text-align: center;
             margin:auto;
-            width: 300px;
+            width: 400px;
             display: block;
 
             box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+
+        .bookingDropDowns {
+            font-size: 30px;
+            text-align: center;
+            padding-right: 80px;
+        }
+
+        .select {
+            text-align: center; 
+            width: 50px;
         }
 
     </style>
@@ -339,7 +350,7 @@
         <div class = "padding_larger"></div>
         <div class = "padding_larger"></div>
 
-        <button class = "bookingButton">BOOK A SERVICE</button>
+        <button class = "bookingTitle">BOOK A SERVICE</button>
 
         <div class = "padding_larger"></div>
         <div class = "padding_larger"></div>
@@ -351,20 +362,62 @@
             </div>
 
             <div class = "row">
-                <h4 class = "bookingInfoSubtitles col" style = "padding-left: 120px; padding-bottom: 30px">SERVICE:</h4>
+                <div class  = "column" style = "flex: 5%"></div>
+                <h4 class = "bookingInfoSubtitles column" style = " padding-left: 30px; flex: 30%; padding-bottom: 30px; text-align: left;">SERVICE:</h4>
+                <select class = "column bookingDropDowns" style = "flex: 30%; width: 50px" name = "Please Select.." id = "service">
+                    <option value = "Please Select.."> Please Select..</option>
+                    <option value = "Colour"> Colour</option>
+                    <option value = "Style"> Style</option>
+                    <option value = "Haircut"> Haircut</option>
+                    <option value = "Consultation"> Consultation</option>
+
+                </select>
+                <div class = "column" style = "flex: 30%"></div>
             </div>
 
-            <div class = "row">
-                <h4 class = "bookingInfoSubtitles" style = "padding-left: 120px; padding-bottom: 30px">EXPERT:</h4>
-            </div>
+            <div class = "padding_larger"></div>
+
 
             <div class = "row">
-                <h4 class = "bookingInfoSubtitles" style = "padding-left: 120px; padding-bottom: 30px">DATE:</h4>
+                <div class  = "column" style = "flex: 5%"></div>
+                <h4 class = "bookingInfoSubtitles column" style = " padding-left: 30px; flex: 30%; padding-bottom: 30px; text-align: left;">EXPERT:</h4>
+                <select class = "column bookingDropDowns" style = "flex: 30%; width: 50px" name = "please select" id = "service">
+                    <option value = "Please Select.."> Please Select..</option>
+                    <option value = "Jill"> Jill</option>
+                    <option value = "Alice"> Alice</option>
+                    <option value = "Jane"> Jane</option>
+                    <option value = "Sam"> Sam</option>
+                </select>
+                <div class = "column" style = "flex: 30%"></div>
             </div>
 
+            <div class = "padding_larger"></div>
+            
             <div class = "row">
-                <h4 class = "bookingInfoSubtitles" style = "padding-left: 120px; padding-bottom: 30px">TIME:</h4>
+                <div class  = "column" style = "flex: 5%"></div>
+                <h4 class = "bookingInfoSubtitles column" style = " padding-left: 30px; flex: 30%; padding-bottom: 30px; text-align: left;">DATE:</h4>
+                <form action="/action_page.php" class = "column bookingDropDowns" style = "flex: 30%; width: 50px">
+                    <input type="date" id="birthday" name="birthday">
+                </form>
+                <div class = "column" style = "flex: 30%"></div>
             </div>
+
+            <div class = "padding_larger"></div>
+
+            <div class = "row">
+                <div class  = "column" style = "flex: 5%"></div>
+                <h4 class = "bookingInfoSubtitles column" style = " padding-left: 30px; flex: 30%; padding-bottom: 30px; text-align: left;">TIME:</h4>
+                <select class = "column bookingDropDowns" style = "flex: 30%; width: 50px" name = "please select" id = "service">
+                    <option value = "Please Select.."> Please Select..</option>
+                    <option value = "Jill"> Jill</option>
+                    <option value = "Alice"> Alice</option>
+                    <option value = "Jane"> Jane</option>
+                    <option value = "Sam"> Sam</option>
+                </select>
+                <div class = "column" style = "flex: 30%"></div>
+            </div>
+
+            <div class = "padding_larger"></div>
 
             <div class = "row">
                 <h3 class = "bookingInfoTitles" style = "padding-left: 60px; padding-bottom: 30px">PERSONAL/CONTACT INFORMATION:</h3>
@@ -375,10 +428,18 @@
             </div>
 
             <div class = "row">
-                <h4 class = "bookingInfoSubtitles" style = "padding-left: 120px;padding-bottom: 30px">EMAIL:</h4>
+                <h4 class = "bookingInfoSubtitles column" style = " padding-left: 30px; flex: 30%; padding-bottom: 30px; text-align: center;">EMAIL:</h4>
+                <select class = "column bookingDropDowns" style = "flex: 30%; width: 50px" name = "please select" id = "service">
+                    <option value = "a"> a</option>
+                    <option value = "b"> b</option>
+                    <option value = "c"> c</option>
+                </select>
+                <div class = "column" style = "flex: 30%"></div>
             </div>
 
-            <div class = "padding_smaller"></div>
+            <div class = "padding_larger"></div>
+            <div class = "padding_larger"></div>
+
             <button class = "bookingButton">SUBMIT</button>
             <div class = "padding_larger"></div>
 
