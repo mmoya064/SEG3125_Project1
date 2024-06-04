@@ -408,11 +408,15 @@
                 <div class  = "column" style = "flex: 5%"></div>
                 <h4 class = "bookingInfoSubtitles column" style = " padding-left: 30px; flex: 30%; padding-bottom: 30px; text-align: left;">TIME:</h4>
                 <select class = "column bookingDropDowns" style = "flex: 30%; width: 50px" name = "please select" id = "service">
-                    <option value = "Please Select.."> Please Select..</option>
-                    <option value = "Jill"> Jill</option>
-                    <option value = "Alice"> Alice</option>
-                    <option value = "Jane"> Jane</option>
-                    <option value = "Sam"> Sam</option>
+                    <option value = "Please Select.." style = "text-align: center;"> Please Select..</option>
+                    <option value = "9am-10am"> 9am-10am</option>
+                    <option value = "10:30am-11:30am"> 10:30am-11:30am</option>
+                    <option value = "12pm-1pm"> 12pm-1pm</option>
+                    <option value = "1:30pm-2:30pm"> 1:30pm-2:30pm</option>
+                    <option value = "3pm-4pm"> 3pm-4pm</option>
+                    <option value = "4:30pm-5:30pm"> 4:30pm-5:30pm</option>
+                    <option value = "6pm-7pm"> 6pm-7pm</option>
+                    <option value = "7:30pm-8:30pm"> 7:30pm-8:30pm</option>
                 </select>
                 <div class = "column" style = "flex: 30%"></div>
             </div>
@@ -424,17 +428,28 @@
             </div>
 
             <div class = "row">
-                <h4 class = "bookingInfoSubtitles" style = "padding-left: 120px; padding-bottom: 30px">NAME:</h4>
+                <div class  = "column" style = "flex: 5%"></div>
+
+                <h4 class = "bookingInfoSubtitles" style = "padding-left: 30px; padding-bottom: 30px; flex: 30%; width: 50px; text-align: left">NAME:</h4>
+                
+                <form action="/action_page.php" style = "flex: 30%; width: 50px">
+                    <label for="fname"></label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                </form> 
+                <div class = "column" style = "flex: 30%"></div>
+
             </div>
 
             <div class = "row">
-                <h4 class = "bookingInfoSubtitles column" style = " padding-left: 30px; flex: 30%; padding-bottom: 30px; text-align: center;">EMAIL:</h4>
-                <select class = "column bookingDropDowns" style = "flex: 30%; width: 50px" name = "please select" id = "service">
-                    <option value = "a"> a</option>
-                    <option value = "b"> b</option>
-                    <option value = "c"> c</option>
-                </select>
+                <div class  = "column" style = "flex: 5%"></div>
+
+                <h4 class = "bookingInfoSubtitles column" style = " padding-left: 30px; flex: 30%; padding-bottom: 30px; text-align: left;">EMAIL:</h4>
+                <form action="/action_page.php" style = "flex: 30%; width: 50px">
+                    <label for="fname"></label><br>
+                    <input type="text" id="fname" name="fname" style = "text-align: center;"><br>
+                </form> 
                 <div class = "column" style = "flex: 30%"></div>
+
             </div>
 
             <div class = "padding_larger"></div>
