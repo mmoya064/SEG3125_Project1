@@ -171,7 +171,7 @@
         }
 
         .bookingContainer {
-            border-radius: 20px;
+            border-radius: 60px;
             width: 1000px;
             margin: auto;
             display: block;
@@ -191,6 +191,21 @@
             font-size: 30px;
             margin: auto;
 
+        }
+
+        .bookingButton {
+            background-image: linear-gradient(rgb(207, 246, 230), rgb(227, 242, 236), rgb(207, 246, 230));
+            border-radius: 50px;
+            font-size: 60px;
+            font-family: 'Gill Sans';
+            border-style: none;
+
+            text-align: center;
+            margin:auto;
+            width: 300px;
+            display: block;
+
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         }
 
     </style>
@@ -332,36 +347,41 @@
         <div class = "bookingContainer">
 
             <div class = "row">
-                <h3 class = "bookingInfoTitles">SERVICE INFORMATION:</h3>
+                <h3 class = "bookingInfoTitles col" style = "padding-left: 60px;">SERVICE INFORMATION:</h3>
             </div>
 
             <div class = "row">
-                <h4 class = "bookingInfoSubtitles">SERVICE:</h4>
+                <h4 class = "bookingInfoSubtitles col" style = "padding-left: 120px; padding-bottom: 30px">SERVICE:</h4>
             </div>
 
             <div class = "row">
-                <h4 class = "bookingInfoSubtitles">EXPERT:</h4>
+                <h4 class = "bookingInfoSubtitles" style = "padding-left: 120px; padding-bottom: 30px">EXPERT:</h4>
             </div>
 
             <div class = "row">
-                <h4 class = "bookingInfoSubtitles">DATE:</h4>
+                <h4 class = "bookingInfoSubtitles" style = "padding-left: 120px; padding-bottom: 30px">DATE:</h4>
             </div>
 
             <div class = "row">
-                <h4 class = "bookingInfoSubtitles">TIME:</h4>
+                <h4 class = "bookingInfoSubtitles" style = "padding-left: 120px; padding-bottom: 30px">TIME:</h4>
             </div>
 
             <div class = "row">
-                <h3 class = "bookingInfoTitles">PERSONAL/CONTACT INFORMATION:</h3>
+                <h3 class = "bookingInfoTitles" style = "padding-left: 60px; padding-bottom: 30px">PERSONAL/CONTACT INFORMATION:</h3>
             </div>
 
             <div class = "row">
-                <h4 class = "bookingInfoSubtitles">NAME:</h4>
+                <h4 class = "bookingInfoSubtitles" style = "padding-left: 120px; padding-bottom: 30px">NAME:</h4>
             </div>
 
             <div class = "row">
-                <h4 class = "bookingInfoSubtitles">EMAIL:</h4>
+                <h4 class = "bookingInfoSubtitles" style = "padding-left: 120px;padding-bottom: 30px">EMAIL:</h4>
             </div>
+
+            <div class = "padding_smaller"></div>
+            <button class = "bookingButton">SUBMIT</button>
+            <div class = "padding_larger"></div>
+
 
         </div>
 
