@@ -306,23 +306,23 @@
         <!-----------------------------NAV BAR----------------------------->
         <div class="container-fluid">
             <div class = "row">
-                <button class="col navbar">
+                <button class="col navbar" onclick = "document.getElementById('booking').scrollIntoView()">
                     <h5 class = "center" style = "font-size: 27px;">BOOKING</h5>
                 </button>
 
-                <button class="col navbar">
+                <button class="col navbar" onclick = "document.getElementById('services').scrollIntoView()">
                     <h5 class = "center" style = "font-size: 27px;">SERVICES</h5>
                 </button>
 
-                <button class="col navbar">
+                <button class="col navbar" onclick = "document.getElementById('our team').scrollIntoView()">
                     <h5 class = "center" style = "font-size: 27px;">OUR TEAM</h5>
                 </button>
 
-                <button class="col navbar">
+                <button class="col navbar" onclick = "document.getElementById('location & hours').scrollIntoView()">
                     <h5 class = "center" style = "font-size: 27px;">LOCATION & HOURS</h5>
                 </button>
 
-                <button class="col navbar">
+                <button class="col navbar" onclick = "document.getElementById('contact').scrollIntoView()">
                     <h5 class = "center" style = "font-size: 27px;">CONTACT</h5>
                 </button>
             </div>
@@ -405,7 +405,7 @@
         <div class = "padding_larger"></div>
         <div class = "padding_larger"></div>
 
-        <button class = "bookingTitle">BOOK A SERVICE</button>
+        <button class = "bookingTitle" id = "booking">BOOK A SERVICE</button>
 
         <div class = "padding_larger"></div>
         <div class = "padding_larger"></div>
@@ -510,7 +510,7 @@
             <div class = "padding_larger"></div>
             <div class = "padding_larger"></div>
 
-            <button class = "bookingButton">SUBMIT</button>
+            <button class = "bookingButton" onclick = "location.href='booking_confirmation.html';">SUBMIT</button>
             <div class = "padding_larger"></div>
 
 
@@ -522,7 +522,7 @@
         <div class = "padding_larger"></div>
         <div class = "padding_larger"></div>
         
-        <button class = "bookingTitle" style = "background: rgb(253, 214, 218)">SERVICES</button>
+        <button class = "bookingTitle" style = "background: rgb(253, 214, 218)" id = "services">SERVICES</button>
         
         <div class = "padding_larger"></div>
         <div class = "padding_larger"></div>
@@ -682,7 +682,7 @@
 
         <!-------------------------------OUR TEAM------------------------------------>
 
-        <button class = "bookingTitle" style = "background: rgb(253, 214, 218)">OUR TEAM</button>
+        <button class = "bookingTitle" style = "background: rgb(253, 214, 218)" id = "our team">OUR TEAM</button>
         
         <div class = "padding_larger"></div>
         <div class = "padding_larger"></div>
@@ -808,6 +808,9 @@
             </div>
         </div>
 
+        <!-------------------------------LOCATION & HOURS------------------------------------>
+
+
         <div class = "padding_larger"></div>
         <div class = "padding_larger"></div>
         <div class = "padding_larger"></div>
@@ -817,11 +820,11 @@
             <div class = "row">
 
                 <div class = "col" style = "text-align: center; padding-left: 100px">
-                    <button class = "center infoButton">LOCATION & HOURS</button>
+                    <button class = "center infoButton" id = "location & hours">LOCATION & HOURS</button>
                 </div>
 
                 <div class = "col" style = "text-align: center; padding-left: 100px">
-                    <button class = "center infoButton">CONTACT INFO</button>
+                    <button class = "center infoButton" id = "contact">CONTACT INFO</button>
                 </div>
             </div>
 
@@ -848,8 +851,8 @@
 
                 </div>
 
-                <div class = "col">
-                    <h4 class = "bookingInfoSubtitles; padding-left: 100px">
+                <div class = "col"  style = "padding-left: 100px">
+                    <h4 class = "bookingInfoSubtitles">
                         &emsp; &emsp; PHONE NUMBER:
                         <br>
                         &emsp; &emsp; &emsp; &emsp; 613-555-1234
