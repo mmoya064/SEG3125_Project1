@@ -55,6 +55,28 @@
                     padding: 15px;
                 }
         
+                .bookingButton {
+            background-image: linear-gradient(rgb(207, 246, 230), rgb(227, 242, 236), rgb(193, 209, 202));
+            border-radius: 50px;
+            font-size: 40px;
+            font-family: 'Gill Sans';
+            border-style: none;
+
+            text-align: center;
+            margin:auto;
+            width: 500px;
+            display: block;
+
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+}
+
         </style>
 </head>
 
@@ -65,7 +87,7 @@
 <div class = "padding_larger"></div>
 
 
-<button class = "bookingTitle">BOOKING CONFIRMATION</button>
+<div class = "bookingTitle" style = "border: 40%;">BOOKING CONFIRMATION</div>
 
 <div class = "padding_larger"></div>
 <div class = "padding_larger"></div>
@@ -81,7 +103,16 @@
 
 <div class = "padding_larger"></div>
 
-<img src = "photos/check.png" alt = "checkmark" style = "height: 140px; width: 120px;text-align: center;; margin-left: 50%; margin-right: 50%;">
+<img class = "center" src = "photos/check.png" alt = "checkmark" style = "height: 140px; width: 120px;text-align: center; ">
+
+<div class = "padding_larger"></div>
+<div class = "padding_larger"></div>
+
+<button class = "bookingButton" onclick = "location.href='seg3125_project1.html';">
+    Click to return to Main Page
+</button>
+
+<div class = "padding_larger"></div>>
 
 </body>
 
