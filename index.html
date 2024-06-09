@@ -412,6 +412,7 @@
 
         <div class = "bookingTitle roundedDivs" id = "booking">BOOK A SERVICE</div>
 
+
         <div class = "padding_larger"></div>
         <div class = "padding_larger"></div>
 
@@ -423,13 +424,36 @@
 
             <div class = "row">
                 <div class  = "column" style = "flex: 5%"></div>
-                <h4 class = "bookingInfoSubtitles column" style = " padding-left: 30px; flex: 30%; padding-bottom: 30px; text-align: left;">SERVICE:</h4>
+                <h4 class = "bookingInfoSubtitles column" style = " padding-left: 30px; flex: 30%; padding-bottom: 30px; text-align: left;"> SINGLE SERVICE:</h4>
                 <select class = "column bookingDropDowns" style = "flex: 30%; width: 50px" name = "Please Select.." id = "service">
                     <option value = "Please Select.."> Please Select..</option>
+                    <option value = "No"> No</option>
+
                     <option value = "Colour"> Colour</option>
                     <option value = "Style"> Style</option>
                     <option value = "Haircut"> Haircut</option>
                     <option value = "Consultation"> Consultation</option>
+
+                </select>
+                <div class = "column" style = "flex: 30%"></div>
+            </div>
+
+            <div class = "padding_larger"></div>
+
+            <div class = "row">
+                <div class  = "column" style = "flex: 5%"></div>
+                <h4 class = "bookingInfoSubtitles column" style = " flex: 30%; padding-left: 30px; padding-bottom: 30px; text-align: left;"> 
+                    MULTIPLE SERVICES: 
+                    <br>
+                    Note: all multiple-service bookings automatically come with a consultation
+                </h4>
+                <select class = "column bookingDropDowns" style = "flex: 30%; width: 50px" name = "Please Select.." id = "service">
+                    <option value = "Please Select.."> Please Select..</option>
+                    <option value = "No"> No</option>
+                    <option value = "Colour and Style"> Colour and Style</option>
+                    <option value = "Style and Haircut"> Style and Haircut</option>
+                    <option value = "Colour and Haircut"> Colour and Haircut</option>
+                    <option value = "Colour, Style, Haircut"> Colour, Style, Haircut</option>
 
                 </select>
                 <div class = "column" style = "flex: 30%"></div>
@@ -488,6 +512,18 @@
             </div>
 
             <div class = "row">
+                <h3 class = "bookingInfoSubtitles" style = "padding-left: 60px; padding-bottom: 30px; color: rgb(125, 125, 125); padding-left: 130px; padding-right: 130px;">
+                    GROUP BOOKINGS: 
+                    <br>
+                    We offer group bookings for up to groups of 10. All members of the groups must be booking for the same servie.
+                    <br>
+                    Please list the names and emails of all group members, separated by a comma
+                    <br>
+                    (Ex; "Jane Doe, John Dough, Jean Doh" for a group of three people)
+                </h3>
+            </div>
+
+            <div class = "row">
                 <div class  = "column" style = "flex: 5%"></div>
 
                 <h4 class = "bookingInfoSubtitles" style = "padding-left: 30px; padding-bottom: 30px; flex: 30%; width: 50px; text-align: left">NAME:</h4>
@@ -520,6 +556,7 @@
 
 
         </div>
+
 
         <!---------------------------SERIVCES------------------------------------------------------>
 
